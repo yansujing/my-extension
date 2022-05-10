@@ -1,0 +1,26 @@
+{
+  "name": "extension",
+  "version": "1.1",
+  "manifest_version": 2,
+  "description": "测试browser_action",
+  "author": "严素静",
+  "icons": {
+    "16": "img/cat2.png",
+    "48": "img/cat2.png",
+    "128": "img/cat2.png"
+  },
+  "browser_action": {
+    "default_icon": "img/cat2.png",
+    "default_title": "test插件",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "page": "back.html"
+  },
+  "permissions": [
+    "tabs",
+    "*://*/*",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
