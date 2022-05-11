@@ -1,8 +1,8 @@
 {
   "name": "extension",
-  "version": "1.1",
+  "version": "2.2",
   "manifest_version": 2,
-  "description": "测试browser_action",
+  "description": "test插件2.2",
   "author": "严素静",
   "icons": {
     "16": "img/cat2.png",
@@ -18,9 +18,22 @@
     "page": "back.html"
   },
   "permissions": [
+    "contextMenus",
     "tabs",
     "*://*/*",
     "http://*/*",
     "https://*/*"
-  ]
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/handle.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "chrome_url_overrides": {}
 }

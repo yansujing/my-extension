@@ -22,3 +22,16 @@ document.getElementById('callBackJS').onclick = function () {
   let page = chrome.extension.getBackgroundPage();
   page.callBackJS('调到后台的js了，并传参了。。。')
 }
+
+// 获取跨域的网页标题
+document.getElementById('otherPageInfo').onclick = function () {
+  let page = chrome.extension.getBackgroundPage();
+  page.getOtherTitle()
+}
+
+document.getElementById('baiduSearch').onclick = function () {
+  chrome.tabs.getSelected(null, function (tab) {
+    document.querySelector
+    chrome.tabs.executeScript(null, { code: "var kw=document.querySelector('#kw');kw.value='北辰';var button=document.querySelector('#su');button.click()" })
+  })
+}
