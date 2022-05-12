@@ -39,5 +39,8 @@
   ],
   "omnibox": {
     "keyword": "shenme"
-  }
+  },
+  "web_accessible_resources": [
+    "js/inject.js"
+  ]
 }

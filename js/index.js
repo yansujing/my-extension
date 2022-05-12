@@ -1,6 +1,7 @@
 // 打开后台页面
 document.getElementById('openBackPage').onclick = function () {
-  window.open(chrome.extension.getURL('background.html'));
+  // window.open(chrome.extension.getURL('background.html'));
+  alert(123456)
 }
 
 // 获取后台页标题
